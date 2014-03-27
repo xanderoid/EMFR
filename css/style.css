@@ -41,7 +41,7 @@ header {
 }
 
 h1 {
-	font-family: 'Changa One', sans-serif;
+	font-family: 'Quintessential', sans-serif;
 	margin: 15px 0;
 	font-size: 1.75em;
 	font-weight: normal;
@@ -105,7 +105,7 @@ footer {
 
 
 /******************************************
-Page: Portfolio
+Page: About
 *******************************************/
 
 #gallery {
@@ -129,10 +129,26 @@ Page: Portfolio
 	color: #bdc3c7;
 }
 
+.list-left {
+	float: left;
+	width: 45%;
+	margin: 2.5%;
+}
+
+.list-right {
+	float: right;
+	width: 45%;
+	margin: 2.5%;
+}
+
+.appointment {
+	clear: both;
+}
+
 
 
 /******************************************
-Page: About
+Page: MFR
 *******************************************/
 
 .profile-photo {
@@ -184,15 +200,19 @@ body {
 	color: #999;
 }
 
+#container {
+	background-color: #fff;
+}
+
 /*Green Header*/
 header {
-	background-color: #6ab47b;
-	border-color: #599a68;
+	background-color: #836372;
+	border-color: #73495F;
 }
 
 /*Nav Background on Mobile Devices*/
 nav {
-	background: #599a68;
+	background: #73495F;
 }
 
 /*Logo Text*/
@@ -201,7 +221,7 @@ h1, h2 {
 }
 
 a {
-	color: #6ab47b;
+	color: #836372;
 }
 
 /*Navigation Link*/
@@ -211,7 +231,7 @@ nav a, nav a:visited {
 
 /*Selected Nav Link*/
 nav a.selected, nav a:hover {
-	color: #32673f;
+	color: #543546;
 }
 
 
