@@ -3,13 +3,14 @@ General
 *******************************************/
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Alegreya Sans', sans-serif;
 }
 
 #container {
 	max-width: 940px;
-	margin: 0 auto;
+	margin: -5px auto;
 	padding: 0 5%;
+	clear: both;
 }
 
 a {
@@ -21,8 +22,14 @@ img {
 }
 
 h3 {
-	margin: 0 0 1em 0;
+	margin: 1em 0 1em 0;
 }
+
+h4 {
+	margin: 0;
+}
+
+
 
 /******************************************
 Heading
@@ -84,6 +91,49 @@ nav a {
 
 
 /******************************************
+Gallery Slider
+*******************************************/
+#promo, #promo li {
+	margin:0 0 2.5% 0;
+/*  padding:0;*/
+  list-style-type:none;
+  clear: both;
+}
+
+#promonav {
+  padding: 4px;
+  background: #eee;
+  border:1px solid #e0e0e0;
+  margin-top: 1px;
+} 
+
+/* Keep the next button at the right edge */
+#promonav .next {
+  float:right;
+}
+
+/* Link styles in promo navigation  */
+#promonav a {
+  padding:0 3px;
+  border:1px solid #eee;
+  text-decoration:none;
+  outline:0;
+  color:#777;
+}
+ 
+/* Style applied on mouseover of promo navigation link(s) */
+#promonav a:hover {
+  color:#000;
+}
+
+/* The index automatically gets an activeSlide class, use this to indicate the current slide */
+#promoindex a.activeSlide {
+  font-weight:bold;
+  background:#fff;
+  border-color:#ccc;
+}
+
+/******************************************
 Footer
 *******************************************/
 
@@ -91,15 +141,10 @@ footer {
 	font-size: 0.75em;
 	text-align: center;
 	clear: both;
-	padding-top: 50px;
 	color: #ccc;
-
-}
-
-.social-icon {
-	width: 20px;
-	height: 20px;
-	margin: 0 5px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 
@@ -107,27 +152,6 @@ footer {
 /******************************************
 Page: About
 *******************************************/
-
-#gallery {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-#gallery li {
-	float: left;
-	width: 45%;
-	margin: 2.5%;
-	background-color: #f5f5f5;
-	color: #bdc3c7;
-}
-
-#gallery li a p {
-	margin: 0;
-	padding: 5%;
-	font-size: 0.75em;
-	color: #bdc3c7;
-}
 
 .list-left {
 	float: left;
@@ -141,9 +165,16 @@ Page: About
 	margin: 2.5%;
 }
 
-.appointment {
+#about-emfr {
 	clear: both;
 }
+
+
+
+/******************************************
+Page: Clients
+*******************************************/
+
 
 
 
@@ -151,12 +182,6 @@ Page: About
 Page: MFR
 *******************************************/
 
-.profile-photo {
-	display: block;
-	max-width: 150px;
-	margin: 0 auto 30px;
-	border-radius: 100%;
-}
 
 
 
@@ -184,8 +209,8 @@ Page: Contact
 	background-image: url('../img/mail.png');
 }
 
-.contact-info li.twitter a{
-	background-image: url('../img/twitter.png');
+.contact-info li.phone a{
+	background-image: url('../img/phone.png');
 }
 
 
@@ -204,7 +229,7 @@ body {
 	background-color: #fff;
 }
 
-/*Green Header*/
+/*GEggplant Header*/
 header {
 	background-color: #836372;
 	border-color: #73495F;
@@ -232,6 +257,11 @@ nav a, nav a:visited {
 /*Selected Nav Link*/
 nav a.selected, nav a:hover {
 	color: #543546;
+}
+
+footer {
+	background-color: #836372;
+	border-color: #73495F;
 }
 
 
